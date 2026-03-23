@@ -1,0 +1,29 @@
+{
+  "manifest_version": 2,
+  "name": "Glyph Capture",
+  "version": "0.0.0",
+  "description": "Capture single rendered glyphs with metadata.",
+  "permissions": [
+    "activeTab",
+    "tabs",
+    "downloads",
+    "<all_urls>"
+  ],
+  "icons": {
+    "48": "assets/icon.svg"
+  },
+  "browser_action": {
+
+  },
+  "background": {
+    "scripts": [
+      "dist/background.global.js"
+    ]
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["dist/content.global.js"]
+    }
+  ]
+}

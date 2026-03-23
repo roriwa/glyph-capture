@@ -1,0 +1,32 @@
+{
+  "name": "glyph-capture",
+  "version": "0.0.0",
+  "description": "",
+  "homepage": "https://github.com/roriwa/glyph-capture#readme",
+  "bugs": {
+    "url": "https://github.com/roriwa/glyph-capture/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/roriwa/glyph-capture.git"
+  },
+  "license": "Apache-2.0",
+  "author": "",
+  "type": "commonjs",
+  "main": "src/index.ts",
+  "scripts": {
+    "build": "tsup",
+    "dev:compile": "tsup --watch",
+    "dev:run": "web-ext run"
+  },
+  "devDependencies": {
+    "@types/color-rgba": "^2.1.3",
+    "@types/firefox-webext-browser": "^143.0.0",
+    "tsup": "^8.5.1",
+    "typescript": "^5.9.3",
+    "web-ext": "^9.3.0"
+  },
+  "dependencies": {
+    "color-rgba": "^3.0.0"
+  }
+}
